@@ -1,0 +1,25 @@
+{
+    "name": "loadsman/laravel",
+    "description": "Laravel plugin for Loadsman",
+    "keywords": ["loadsman", "laravel", "plugin", "api", "debug"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yauheni Prakopchyk",
+            "email": "ontrew@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require": {
+        "laravel/framework": "5.2.*",
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "^0.9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Asvae\\ApiTester\\": "src/"
+        }
+    }
+}
