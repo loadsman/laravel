@@ -2,13 +2,12 @@
 
 namespace Loadsman\Laravel\Contracts;
 
+use Loadsman\Laravel\Collections\RouteCollection;
+
 interface RouteRepositoryInterface
 {
     /**
-     * @param array $match
-     * @param array $except
-     *
-     * @return mixed
+     * @return RouteCollection
      */
-    public function get($match = [], $except = []);
+    public function get();
 }

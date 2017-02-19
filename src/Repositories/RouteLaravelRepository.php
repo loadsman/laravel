@@ -25,15 +25,10 @@ class RouteLaravelRepository implements RouteRepositoryInterface
     }
 
     /**
-     * @param array $match
-     * @param array $except
-     *
      * @return \Loadsman\Laravel\Collections\RouteCollection
      */
-    public function get($match = [], $except = [])
+    public function get()
     {
-        return $this->routes->filterMatch($match)
-            ->filterExcept($except)
-            ->values();
+        return $this->routes->values();
     }
 }
