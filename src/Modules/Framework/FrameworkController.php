@@ -2,13 +2,11 @@
 
 namespace Loadsman\Laravel\Modules\Framework;
 
-use Illuminate\Foundation\Application;
-use Illuminate\Routing\Controller;
 use Loadsman\PHP\DAO\Framework;
 use Loadsman\PHP\Http\Response;
 use Loadsman\PHP\Transformers\FrameworkTransformer;
 
-class FrameworkController extends Controller
+class FrameworkController extends \Illuminate\Routing\Controller
 {
     public function getData()
     {

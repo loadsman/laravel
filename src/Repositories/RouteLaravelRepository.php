@@ -10,13 +10,13 @@ use Illuminate\Routing\Router;
 class RouteLaravelRepository implements RouteRepositoryInterface
 {
     /**
-     * @type \Loadsman\Laravel\Collections\RouteCollection
+     * @type Router
      */
     protected $routes;
 
-    public function __construct(RouteCollection $collection, Router $router)
+    public function __construct(Router $router)
     {
-        $this->routes = $collection;
+        $this->router = $router;
 
         foreach ($router->getRoutes() as $route) {
             $routeInfo = (new RouteInfo($route, ['router' => 'Laravel']))->toArray();
