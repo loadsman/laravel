@@ -13,7 +13,7 @@
         "php": ">=5.4.0"
     },
     "require": {
-        "laravel/framework": "5.1.*",
+        "laravel/framework": "^5.1",
         "loadsman/php-contract": "dev-master"
     },
     "autoload": {
