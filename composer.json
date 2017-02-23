@@ -1,5 +1,5 @@
 {
-    "name": "loadsman/laravel",
+    "name": "loadsman/laravel-plugin",
     "description": "Laravel plugin for Loadsman",
     "keywords": ["loadsman", "laravel", "plugin", "api", "debug"],
     "license": "MIT",
