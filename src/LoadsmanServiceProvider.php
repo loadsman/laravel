@@ -8,10 +8,14 @@ use Loadsman\Laravel\Providers\RepositoryServiceProvider;
 use Loadsman\Laravel\Providers\RouteServiceProvider;
 use Illuminate\Routing\Router;
 
-class ServiceProvider extends \Illuminate\Support\ServiceProvider
+class LoadsmanServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     public function register()
     {
+        if (! env('APP_DEBUG')){
+            return;
+        }
+
         $this->app->register(MacroServiceProvider::class);
         $this->app->register(FrameworkServiceProvider::class);
         $this->app->register(RuleServiceProvider::class);

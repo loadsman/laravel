@@ -13,13 +13,12 @@
         "php": ">=5.4.0"
     },
     "require": {
-        "laravel/framework": "5.2.*",
-        "phpunit/phpunit": "~4.0",
-        "mockery/mockery": "^0.9.5"
+        "laravel/framework": "5.1.*",
+        "loadsman/php": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "Asvae\\ApiTester\\": "src/"
+            "Loadsman\\laravel\\": "src/"
         }
     }
 }
