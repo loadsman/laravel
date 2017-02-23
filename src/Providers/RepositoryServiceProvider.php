@@ -1,12 +1,12 @@
 <?php
 
-namespace Loadsman\Laravel\Providers;
+namespace Loadsman\LaravelPlugin\Providers;
 
 
-use Loadsman\Laravel\Collections\RouteCollection;
-use Loadsman\Laravel\Contracts\RequestRepositoryInterface;
-use Loadsman\Laravel\Contracts\RouteRepositoryInterface;
-use Loadsman\Laravel\Repositories\RouteRepository;
+use Loadsman\LaravelPlugin\Collections\RouteCollection;
+use Loadsman\LaravelPlugin\Contracts\RequestRepositoryInterface;
+use Loadsman\LaravelPlugin\Contracts\RouteRepositoryInterface;
+use Loadsman\LaravelPlugin\Repositories\RouteRepository;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\ServiceProvider;
 

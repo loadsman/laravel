@@ -1,20 +1,20 @@
 <?php
 
-namespace Loadsman\Laravel\Contracts;
+namespace Loadsman\LaravelPlugin\Contracts;
 
-use Loadsman\Laravel\Entities\RequestEntity;
+use Loadsman\LaravelPlugin\Entities\RequestEntity;
 
 interface RequestRepositoryInterface
 {
     /**
      * @param $id
      *
-     * @return \Loadsman\Laravel\Entities\RequestEntity
+     * @return \Loadsman\LaravelPlugin\Entities\RequestEntity
      */
     public function find($id);
 
     /**
-     * @param \Loadsman\Laravel\Entities\RequestEntity $request
+     * @param \Loadsman\LaravelPlugin\Entities\RequestEntity $request
      *
      * @return void
      */
@@ -28,7 +28,7 @@ interface RequestRepositoryInterface
     public function exists($id);
 
     /**
-     * @return \Loadsman\Laravel\Collections\RequestCollection|\Loadsman\Laravel\Entities\RequestEntity[]
+     * @return \Loadsman\LaravelPlugin\Collections\RequestCollection|\Loadsman\LaravelPlugin\Entities\RequestEntity[]
      */
     public function all();
 

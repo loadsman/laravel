@@ -1,10 +1,10 @@
 <?php
 
-namespace Loadsman\Laravel\Repositories;
+namespace Loadsman\LaravelPlugin\Repositories;
 
-use Loadsman\Laravel\Collections\RouteCollection;
-use Loadsman\Laravel\Contracts\RouteRepositoryInterface;
-use Loadsman\Laravel\Entities\RouteInfo;
+use Loadsman\LaravelPlugin\Collections\RouteCollection;
+use Loadsman\LaravelPlugin\Contracts\RouteRepositoryInterface;
+use Loadsman\LaravelPlugin\Entities\RouteInfo;
 use Illuminate\Routing\Router;
 
 class RouteLaravelRepository implements RouteRepositoryInterface
@@ -25,7 +25,7 @@ class RouteLaravelRepository implements RouteRepositoryInterface
     }
 
     /**
-     * @return \Loadsman\Laravel\Collections\RouteCollection
+     * @return \Loadsman\LaravelPlugin\Collections\RouteCollection
      */
     public function get()
     {

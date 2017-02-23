@@ -1,8 +1,8 @@
 <?php
 
-namespace Loadsman\Laravel\Contracts;
+namespace Loadsman\LaravelPlugin\Contracts;
 
-use Loadsman\Laravel\Collections\RouteCollection;
+use Loadsman\LaravelPlugin\Collections\RouteCollection;
 
 interface RouteRepositoryInterface
 {

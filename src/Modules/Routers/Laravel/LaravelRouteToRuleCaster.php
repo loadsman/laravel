@@ -1,6 +1,6 @@
 <?php
 
-namespace Loadsman\Laravel\Modules\Routers\Laravel;
+namespace Loadsman\LaravelPlugin\Modules\Routers\Laravel;
 
 use Illuminate\Routing\Route;
 use Loadsman\PHP\DAO\Rule;

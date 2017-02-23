@@ -1,9 +1,9 @@
 <?php
 
-namespace Loadsman\Laravel\Repositories;
+namespace Loadsman\LaravelPlugin\Repositories;
 
-use Loadsman\Laravel\Collections\RouteCollection;
-use Loadsman\Laravel\Contracts\RouteRepositoryInterface;
+use Loadsman\LaravelPlugin\Collections\RouteCollection;
+use Loadsman\LaravelPlugin\Contracts\RouteRepositoryInterface;
 
 /**
  * Class RouteRepository
@@ -13,12 +13,12 @@ use Loadsman\Laravel\Contracts\RouteRepositoryInterface;
 class RouteRepository implements RouteRepositoryInterface
 {
     /**
-     * @type \Loadsman\Laravel\Contracts\RouteRepositoryInterface[]
+     * @type \Loadsman\LaravelPlugin\Contracts\RouteRepositoryInterface[]
      */
     protected $repositories;
 
     /**
-     * @type \Loadsman\Laravel\Collections\RouteCollection
+     * @type \Loadsman\LaravelPlugin\Collections\RouteCollection
      */
     protected $routes;
 

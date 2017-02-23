@@ -1,10 +1,10 @@
 <?php
 
-namespace Loadsman\Laravel\Providers;
+namespace Loadsman\LaravelPlugin\Providers;
 
-use Loadsman\Laravel\Http\Middleware\DebugState;
-use Loadsman\Laravel\Http\Middleware\DetectRoute;
-use Loadsman\Laravel\Http\Middleware\PreventRedirect;
+use Loadsman\LaravelPlugin\Http\Middleware\DebugState;
+use Loadsman\LaravelPlugin\Http\Middleware\DetectRoute;
+use Loadsman\LaravelPlugin\Http\Middleware\PreventRedirect;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Loadsman\Laravel\Modules\Rule;
+namespace Loadsman\LaravelPlugin\Modules\Rule;
 
 use Loadsman\PHP\DAO\Rule;
 use Loadsman\PHP\Http\Response;

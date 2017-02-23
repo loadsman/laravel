@@ -1,10 +1,10 @@
 <?php
 
-namespace Loadsman\Laravel\Repositories;
+namespace Loadsman\LaravelPlugin\Repositories;
 
-use Loadsman\Laravel\Collections\RouteCollection;
-use Loadsman\Laravel\Contracts\RouteRepositoryInterface;
-use Loadsman\Laravel\Entities\RouteInfo;
+use Loadsman\LaravelPlugin\Collections\RouteCollection;
+use Loadsman\LaravelPlugin\Contracts\RouteRepositoryInterface;
+use Loadsman\LaravelPlugin\Entities\RouteInfo;
 use Dingo\Api\Routing\Router;
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Contracts\Foundation\Application;
@@ -17,7 +17,7 @@ use Illuminate\Contracts\Foundation\Application;
 class RouteDingoRepository implements RouteRepositoryInterface
 {
     /**
-     * @type \Loadsman\Laravel\Collections\RouteCollection
+     * @type \Loadsman\LaravelPlugin\Collections\RouteCollection
      */
     protected $routes;
 
@@ -49,7 +49,7 @@ class RouteDingoRepository implements RouteRepositoryInterface
      * @param array $match
      * @param array $except
      *
-     * @return \Loadsman\Laravel\Collections\RouteCollection
+     * @return \Loadsman\LaravelPlugin\Collections\RouteCollection
      */
     public function get($match = [], $except = [])
     {

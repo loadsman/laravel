@@ -1,10 +1,10 @@
 <?php
 
-namespace Loadsman\Laravel\Modules\Routers\Laravel;
+namespace Loadsman\LaravelPlugin\Modules\Routers\Laravel;
 
 use Illuminate\Routing\Route;
 use Illuminate\Routing\Router;
-use Loadsman\Laravel\Modules\Routers\RouterContract;
+use Loadsman\LaravelPlugin\Modules\Routers\RouterContract;
 
 class LaravelRouter implements RouterContract
 {

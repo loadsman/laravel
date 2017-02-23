@@ -1,11 +1,11 @@
 <?php
 
-namespace Loadsman\Laravel\Repositories;
+namespace Loadsman\LaravelPlugin\Repositories;
 
-use Loadsman\Laravel\Collections\RequestCollection;
-use Loadsman\Laravel\Contracts\RequestRepositoryInterface;
-use Loadsman\Laravel\Contracts\StorageInterface;
-use Loadsman\Laravel\Entities\RequestEntity;
+use Loadsman\LaravelPlugin\Collections\RequestCollection;
+use Loadsman\LaravelPlugin\Contracts\RequestRepositoryInterface;
+use Loadsman\LaravelPlugin\Contracts\StorageInterface;
+use Loadsman\LaravelPlugin\Entities\RequestEntity;
 use Illuminate\Filesystem\Filesystem;
 
 
@@ -17,19 +17,19 @@ use Illuminate\Filesystem\Filesystem;
 class RequestRepository implements RequestRepositoryInterface
 {
     /**
-     * @type \Loadsman\Laravel\Collections\RequestCollection
+     * @type \Loadsman\LaravelPlugin\Collections\RequestCollection
      */
     protected $requests;
 
     /**
-     * @type \Loadsman\Laravel\Contracts\StorageInterface
+     * @type \Loadsman\LaravelPlugin\Contracts\StorageInterface
      */
     protected $storage;
 
     /**
      * RequestRepository constructor.
      *
-     * @param \Loadsman\Laravel\Contracts\StorageInterface $storage
+     * @param \Loadsman\LaravelPlugin\Contracts\StorageInterface $storage
      * @internal param RequestCollection $requests
      */
     public function __construct(StorageInterface $storage)
@@ -76,7 +76,7 @@ class RequestRepository implements RequestRepositoryInterface
     }
 
     /**
-     * @param \Loadsman\Laravel\Entities\RequestEntity $request
+     * @param \Loadsman\LaravelPlugin\Entities\RequestEntity $request
      *
      * @return mixed
      */

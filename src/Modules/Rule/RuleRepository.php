@@ -1,8 +1,8 @@
 <?php
 
-namespace Loadsman\Laravel\Modules\Rule;
+namespace Loadsman\LaravelPlugin\Modules\Rule;
 
-use Loadsman\Laravel\Modules\Routers\Laravel\LaravelRouter;
+use Loadsman\LaravelPlugin\Modules\Routers\Laravel\LaravelRouter;
 
 class RuleRepository
 {

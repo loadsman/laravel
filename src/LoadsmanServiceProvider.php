@@ -1,11 +1,11 @@
 <?php
 
-namespace Loadsman\Laravel;
-use Loadsman\Laravel\Modules\Framework\FrameworkServiceProvider;
-use Loadsman\Laravel\Modules\Rule\RuleServiceProvider;
-use Loadsman\Laravel\Providers\MacroServiceProvider;
-use Loadsman\Laravel\Providers\RepositoryServiceProvider;
-use Loadsman\Laravel\Providers\RouteServiceProvider;
+namespace Loadsman\LaravelPlugin;
+use Loadsman\LaravelPlugin\Modules\Framework\FrameworkServiceProvider;
+use Loadsman\LaravelPlugin\Modules\Rule\RuleServiceProvider;
+use Loadsman\LaravelPlugin\Providers\MacroServiceProvider;
+use Loadsman\LaravelPlugin\Providers\RepositoryServiceProvider;
+use Loadsman\LaravelPlugin\Providers\RouteServiceProvider;
 use Illuminate\Routing\Router;
 
 class LoadsmanServiceProvider extends \Illuminate\Support\ServiceProvider

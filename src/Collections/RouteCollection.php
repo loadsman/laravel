@@ -1,6 +1,6 @@
 <?php
 
-namespace Loadsman\Laravel\Collections;
+namespace Loadsman\LaravelPlugin\Collections;
 
 use Illuminate\Support\Collection;
 

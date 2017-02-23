@@ -1,8 +1,8 @@
 <?php
 
-namespace Loadsman\Laravel\Http\Middleware;
+namespace Loadsman\LaravelPlugin\Http\Middleware;
 
-use Loadsman\Laravel\Entities\RouteInfo;
+use Loadsman\LaravelPlugin\Entities\RouteInfo;
 use Closure;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Http\Request;

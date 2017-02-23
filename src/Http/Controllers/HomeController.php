@@ -1,6 +1,6 @@
 <?php
 
-namespace Loadsman\Laravel\Http\Controllers;
+namespace Loadsman\LaravelPlugin\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 

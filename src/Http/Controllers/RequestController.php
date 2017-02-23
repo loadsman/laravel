@@ -1,11 +1,11 @@
 <?php
 
-namespace Loadsman\Laravel\Http\Controllers;
+namespace Loadsman\LaravelPlugin\Http\Controllers;
 
-use Loadsman\Laravel\Contracts\RequestRepositoryInterface;
-use Loadsman\Laravel\Entities\RequestEntity;
-use Loadsman\Laravel\Http\Requests\StoreRequest;
-use Loadsman\Laravel\Http\Requests\UpdateRequest;
+use Loadsman\LaravelPlugin\Contracts\RequestRepositoryInterface;
+use Loadsman\LaravelPlugin\Entities\RequestEntity;
+use Loadsman\LaravelPlugin\Http\Requests\StoreRequest;
+use Loadsman\LaravelPlugin\Http\Requests\UpdateRequest;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
@@ -17,14 +17,14 @@ use Illuminate\Routing\Controller;
 class RequestController extends Controller
 {
     /**
-     * @type \Loadsman\Laravel\Contracts\RequestRepositoryInterface
+     * @type \Loadsman\LaravelPlugin\Contracts\RequestRepositoryInterface
      */
     protected $repository;
 
     /**
      * RequestController constructor.
      *
-     * @param \Loadsman\Laravel\Contracts\RequestRepositoryInterface $repository
+     * @param \Loadsman\LaravelPlugin\Contracts\RequestRepositoryInterface $repository
      */
     public function __construct(RequestRepositoryInterface $repository)
     {
@@ -43,7 +43,7 @@ class RequestController extends Controller
 
     /**
      *
-     * @param \Loadsman\Laravel\Http\Requests\StoreRequest $storeRequest
+     * @param \Loadsman\LaravelPlugin\Http\Requests\StoreRequest $storeRequest
      *
      * @return \Illuminate\Http\Response
      */

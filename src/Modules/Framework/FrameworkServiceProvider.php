@@ -1,6 +1,6 @@
 <?php
 
-namespace Loadsman\Laravel\Modules\Framework;
+namespace Loadsman\LaravelPlugin\Modules\Framework;
 use Illuminate\Routing\Router;
 
 class FrameworkServiceProvider extends \Illuminate\Support\ServiceProvider

@@ -1,6 +1,6 @@
 <?php
 
-namespace Loadsman\Laravel\Modules\Framework;
+namespace Loadsman\LaravelPlugin\Modules\Framework;
 
 use Loadsman\PHP\DAO\Framework;
 use Loadsman\PHP\Http\Response;

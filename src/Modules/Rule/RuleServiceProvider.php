@@ -1,6 +1,6 @@
 <?php
 
-namespace Loadsman\Laravel\Modules\Rule;
+namespace Loadsman\LaravelPlugin\Modules\Rule;
 use Illuminate\Routing\Router;
 
 class RuleServiceProvider extends \Illuminate\Support\ServiceProvider

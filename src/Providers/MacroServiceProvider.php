@@ -1,6 +1,6 @@
 <?php
 
-namespace Loadsman\Laravel\Providers;
+namespace Loadsman\LaravelPlugin\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

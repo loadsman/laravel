@@ -1,6 +1,6 @@
 <?php
 
-namespace Loadsman\Laravel\Http\Requests;
+namespace Loadsman\LaravelPlugin\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

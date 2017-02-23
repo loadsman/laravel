@@ -1,8 +1,8 @@
 <?php
 
-namespace Loadsman\Laravel\Http\Controllers;
+namespace Loadsman\LaravelPlugin\Http\Controllers;
 
-use Loadsman\Laravel\Contracts\RouteRepositoryInterface;
+use Loadsman\LaravelPlugin\Contracts\RouteRepositoryInterface;
 use Illuminate\Routing\Controller;
 
 /**

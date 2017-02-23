@@ -1,6 +1,6 @@
 <?php
 
-namespace Loadsman\Laravel\Entities;
+namespace Loadsman\LaravelPlugin\Entities;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Foundation\Http\FormRequest;

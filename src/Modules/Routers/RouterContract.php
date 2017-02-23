@@ -1,6 +1,6 @@
 <?php
 
-namespace Loadsman\Laravel\Modules\Routers;
+namespace Loadsman\LaravelPlugin\Modules\Routers;
 
 interface RouterContract
 {
