@@ -14,7 +14,7 @@
     },
     "require": {
         "laravel/framework": "5.1.*",
-        "loadsman/php": "dev-master"
+        "loadsman/php-contract": "dev-master"
     },
     "autoload": {
         "psr-4": {
