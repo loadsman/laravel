@@ -8,11 +8,6 @@ use Loadsman\LaravelPlugin\Modules\Routers\RouterContract;
 
 class LaravelRouter implements RouterContract
 {
-    public function getName()
-    {
-        return 'Laravel';
-    }
-
     public function __construct(Router $router)
     {
         $this->router = $router;

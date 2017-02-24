@@ -3,7 +3,7 @@
 namespace Loadsman\LaravelPlugin\Modules\Routers\Laravel;
 
 use Illuminate\Routing\Route;
-use Loadsman\PHP\DAO\Rule;
+use Loadsman\PHP\DTO\Rule;
 
 class LaravelRouteToRuleCaster
 {

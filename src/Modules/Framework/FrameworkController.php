@@ -2,7 +2,7 @@
 
 namespace Loadsman\LaravelPlugin\Modules\Framework;
 
-use Loadsman\PHP\DAO\Framework;
+use Loadsman\PHP\DTO\Framework;
 use Loadsman\PHP\Http\Response;
 use Loadsman\PHP\Transformers\FrameworkTransformer;
 

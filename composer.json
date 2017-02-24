@@ -1,24 +1,37 @@
 {
-    "name": "loadsman/laravel-plugin",
-    "description": "Laravel plugin for Loadsman",
-    "keywords": ["loadsman", "laravel", "plugin", "api", "debug"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Yauheni Prakopchyk",
-            "email": "ontrew@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.4.0"
-    },
-    "require": {
-        "laravel/framework": "^5.1",
-        "loadsman/php-contract": "^0.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Loadsman\\LaravelPlugin\\": "src/"
-        }
+  "name": "loadsman/laravel-plugin",
+  "description": "Laravel plugin for Loadsman",
+  "keywords": [
+    "loadsman",
+    "laravel",
+    "plugin",
+    "api",
+    "debug"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yauheni Prakopchyk",
+      "email": "ontrew@gmail.com"
     }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "laravel/framework": "^5.1",
+    "loadsman/php-contract": "^0.0.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7",
+    "orchestra/testbench": "~3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Loadsman\\LaravelPlugin\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Loadsman\\LaravelPluginTests\\": "tests/src/"
+    }
+  }
 }

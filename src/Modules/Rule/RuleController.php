@@ -2,7 +2,7 @@
 
 namespace Loadsman\LaravelPlugin\Modules\Rule;
 
-use Loadsman\PHP\DAO\Rule;
+use Loadsman\PHP\DTO\Rule;
 use Loadsman\PHP\Http\Response;
 
 class RuleController extends \Illuminate\Routing\Controller

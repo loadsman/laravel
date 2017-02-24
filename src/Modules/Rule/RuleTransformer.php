@@ -2,7 +2,7 @@
 
 namespace Loadsman\LaravelPlugin\Modules\Rule;
 
-use Loadsman\PHP\DAO\Rule;
+use Loadsman\PHP\DTO\Rule;
 
 class RuleTransformer
 {
