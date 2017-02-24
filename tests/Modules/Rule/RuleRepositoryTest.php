@@ -18,11 +18,29 @@ class RuleRepositoryTest extends \Loadsman\LaravelPluginTests\TestCase
     {
         $this->app->make('router')->post('some-route', function () { });
         $rules = $this->ruleRepository->getAll();
-        dump($rules);
-        $hasRule = array_first($rules, function (\Loadsman\PHP\DTO\Rule $rule) {
-            return $rule->getUri() === 'some-route';
-        });
 
-        $this->assertNotNull($hasRule);
+        $ruleExists = $this->hasByCondition($rules,
+            function (\Loadsman\PHP\DTO\Rule $rule) {
+                return $rule->getUri() === 'some-route';
+            });
+
+        $this->assertTrue($ruleExists);
+    }
+
+    /**
+     * True if any item in array passes condition.
+     * False otherwise.
+     *
+     * @param array   $array
+     * @param Closure $condition
+     * @return bool
+     */
+    private function hasByCondition(array $array, Closure $condition){
+        foreach ($array as $item) {
+            if ($condition($item)){
+                return true;
+            }
+        }
+        return false;
     }
 }
