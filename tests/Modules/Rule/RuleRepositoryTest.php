@@ -18,6 +18,7 @@ class RuleRepositoryTest extends \Loadsman\LaravelPluginTests\TestCase
     {
         $this->app->make('router')->post('some-route', function () { });
         $rules = $this->ruleRepository->getAll();
+        dump($rules);
         $hasRule = array_first($rules, function (\Loadsman\PHP\DTO\Rule $rule) {
             return $rule->getUri() === 'some-route';
         });
