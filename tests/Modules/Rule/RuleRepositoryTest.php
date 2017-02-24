@@ -7,7 +7,7 @@ class RuleRepositoryTest extends \Loadsman\LaravelPluginTests\TestCase
      */
     private $ruleRepository;
 
-    protected function setUp()
+    public function setUp()
     {
         parent::setUp();
 
