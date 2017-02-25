@@ -74,7 +74,7 @@ class RouteInfo implements Arrayable, JsonSerializable
         $isOldLaravel = method_exists($this->route, 'getMethods');
         // < 5.4 has `getMethods', 5.4+ has methods().
         $methodName = $isOldLaravel ? 'getMethods' : 'methods';
-        
+
         return $this->route->$methodName();
     }
 
@@ -230,13 +230,11 @@ class RouteInfo implements Arrayable, JsonSerializable
      */
     protected function getUri()
     {
-        if (method_exists($this->route, 'getPath')) {
-            // Laravel <5.4
-            return $this->route->getPath();
-        }
+        $isOldLaravel = method_exists($this->route, 'getPath');
+        // <5.4 got `getPath`, 5.4+ got `uri`.
+        $methodName = $isOldLaravel ? 'getPath' : 'uri';
 
-        // Laravel 5.4+
-        return $this->route->uri();
+        return $this->route->$methodName();
     }
 
     protected function setError($type, $text, $params = [])
