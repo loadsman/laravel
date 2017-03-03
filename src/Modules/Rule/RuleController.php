@@ -4,6 +4,7 @@ namespace Loadsman\LaravelPlugin\Modules\Rule;
 
 use Loadsman\PHP\DTO\Rule;
 use Loadsman\PHP\Http\Response;
+use Loadsman\PHP\Transformers\RuleTransformer;
 
 class RuleController extends \Illuminate\Routing\Controller
 {
